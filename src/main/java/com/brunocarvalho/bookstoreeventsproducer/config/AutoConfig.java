@@ -11,6 +11,7 @@ public class AutoConfig {
 	@Bean
 	public NewTopic bookStoreEvents() {
 
+		//isso só é recomendado para estudar nao para producao
 		return TopicBuilder.name("bookstore-events")
 				.partitions(1)
 				.replicas(1)
